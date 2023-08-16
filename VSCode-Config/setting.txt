@@ -23,4 +23,5 @@ en el archivo de configuracion copiar
 	"prettier.tabWidth": 2,
 	"prettier.useTabs": true,
 	"prettier.embeddedLanguageFormatting": "auto"
+	
 }
