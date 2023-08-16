@@ -1,0 +1,42 @@
+Documentación en español de bootstrap5
+https://getbootstrap.esdocu.com/
+
+Tutorial
+https://www.youtube.com/watch?v=JDs45GmZWUo
+
+
+Bootstrap trabaja con clases que son formas de darle estilos a las etiquetas
+
+1 Bootstrap divide el ancho del navegador en 12 secciones
+y permite usar 4 secciones para un contenido y 8 para otro o tambien de 2 y 10, 6 y 6 o 9 y 3
+
+2 Bootstrap Maneja estos tamaño de pantalla
+    sm = small
+    md = medium
+    lg = large
+    xl = extra large
+
+3 Clase container
+    nos permite dividir la pantalla con un espacio a la izq y a la der
+    | izq | container | der |
+  Ejemplo:
+  <div class="container" ></div>    
+
+4 dentro de container van a estar las filas o row = fila
+    .container
+        .row
+
+//Las diviciones se hacen en el elemento mas interno
+    en este caso las diviciones se hacen dentro del container con los espacios a la izq y der
+
+5 dividir el espacio en 3 secciones columnas col-md-4 = columna-tamaño-espacio
+    .col-md-4 .col-md-4 .col-md-4  // divide el espacio en 3 secciones de 4 espacios
+        // en tamaño medium quiero un espacio de 4 * 3 = 12
+
+    Ahora dentro de un col-md-4 podria subdividirlo entre 12
+    como esta en tamaño medium cuando entren en tamaño sm pequeño colapsaran y se pondran una dentro de otra
+5.1 Se pueden poner mas tamaños en una sola seccion
+    ejemplo:
+        .col-md-4.col-sm-12.col-lg-4.col-xl-4
+        se le esta diciendo que en tamaño small tome los 12 espacios y 
+        en los tamaños medium large y extra large tome solo 4 espacios
