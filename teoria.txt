@@ -5,6 +5,13 @@ Tutorial
 https://www.youtube.com/watch?v=JDs45GmZWUo
 
 
+Margin es espacio entre otros elementos externos
+Padin es espacio en el mismo contenedor interno
+Centrar texto
+text-align:center horizontal
+vertical-align:middle Vertical
+
+
 Bootstrap trabaja con clases que son formas de darle estilos a las etiquetas
 
 1 Bootstrap divide el ancho del navegador en 12 secciones
@@ -21,6 +28,19 @@ y permite usar 4 secciones para un contenido y 8 para otro o tambien de 2 y 10, 
     | izq | container | der |
   Ejemplo:
   <div class="container" ></div>    
+
+3.1 Agregar margenes 
+    ms-auto   =>  Margin start Osea margen al inicio
+    me-auto   => Margin end Margen al final
+    my-3    => margen en el eje Y vertical de 3 unidades del elemento con el que esta chocando arriba y abajo
+    mx-3 => margen en el eje X horizontal de 3 unidades del elemento con el que esta chocando arriba y abajo
+    mb-3 => Margen botton osea en la parte de abajo
+    Tambien se pude con el pading
+    py-3
+    px-3
+    Ejemplo en el container
+    .container.my-3
+
 
 4 dentro de container van a estar las filas o row = fila
     .container
@@ -40,3 +60,90 @@ y permite usar 4 secciones para un contenido y 8 para otro o tambien de 2 y 10, 
         .col-md-4.col-sm-12.col-lg-4.col-xl-4
         se le esta diciendo que en tamaño small tome los 12 espacios y 
         en los tamaños medium large y extra large tome solo 4 espacios
+---------------------------------------------------------------------------------
+Practica ver imagen
+Ver la documentacion de bootstrap con el codigo listo para copiar
+6 Barra de navegacion
+    ver en la documentacion componetes -> NAVBAR
+ Como esta fuera del container Ocupa todo el espacio horizontal
+ Para que el menu vaya a la a la der usar ms-auto en <div class="navbar-nav ms-auto">
+ Para que funcione el menu amburgesa hay que importar js
+
+6.1 Los colores
+    Los colores se basan en el nombre de una clase guion un color o estilo
+    Ejemplo 
+    navbar-light bg-light
+    Se puede ver mejor en los componentes de los botones
+
+7 formulario y tabla
+    1 espacio para el formulario y otro para la tabla
+        formulario 4 espacios y la tabla 8
+    Ejemplo
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">Formulario</div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">Tabla</div>
+		</div>
+	</div>
+
+
+7.1 Hacer la tabla //Todo esto dentro del div de tabla
+<table class="table table-striped table-dark">
+	<!--Encabezado de tabla-->
+	    <thead>
+		    <tr>
+			    <!--Agrupar titulos de encabezado-->
+			    <th>TituloEncabezado Celda1</th>
+                <th>TituloEncabezado Celda2</th>
+            </tr>
+		</thead>
+     <!--Cuerpo de tabla-->
+        <tbody>
+        	<tr>
+        		<!--Contenido de una primer fila-->
+        		<!--Celda 1-->
+        		<td>1</td>
+        		<!--Celda 2-->
+        		<td>Java Script</td>
+        	</tr>
+        	<tr>
+        		<!--Contenido de una Segunda fila-->
+        		<!--Celda 1-->
+        		<td>1</td>
+        		<!--Celda 2-->
+        		<td>Java Script</td>
+        	</tr>            
+        </tbody>    
+        <!--Fin Cuerpo de tabla-->
+</table>
+<!--Fin Tabla-->
+
+
+8 Formulario copiar de la documentacion de bootstrap
+    form => formularios
+
+    copiarlos dentro de la etiqueta de formulario
+    <form>
+        <div class="mb-3">  //El label el atributo form tiene que tener el id del imput asociado
+          <label for="nombre" class="form-label">Correo electrónico</label>
+          <input type="text" class="form-control" id="nombre" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="descripcion" class="form-label">Ejemplo de textarea</label>
+          <textarea class="form-control" id="descripcion" rows="3"></textarea>
+        </div>
+    </form>
+    //Para que el textarea no se redimencione en el css acceder al id del textarea y poner resize:none\
+    Agregar botones dentro del formulario  Componentes Buttons
+    <button class="btn btn-success">Guardar</button>
+	<button class="btn">Limpiar</button>
+
+
+
+
+
+
+
+
+Poner fondo degradado usar uigradients.com
+    
